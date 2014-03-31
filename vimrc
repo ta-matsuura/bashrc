@@ -30,14 +30,17 @@ NeoBundle 'Shougo/vimproc', {
 " ...
 "NeoBundle 'Shougo/neocomplcache'
 "NeoBundle 'Shougo/neosnippet'
-"NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'ujihisa/unite-colorscheme'
 "NeoBundle 'thinca/vim-quickrun'
 "NeoBundle 'davidoc/taskpaper.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
-
+NeoBundle 'tomasr/molokai'
+NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'croaker/mustang-vim'
 filetype plugin indent on     " Required!
 "
 " Brief help
@@ -135,3 +138,16 @@ let g:NERDTreeWinSize=40
 let g:NERDTreeWinPos="left"
 let g:NERDTreeDirArrows=1
 let g:NERDTreeMouseMode=3
+
+colorscheme darkblue 
+if &term =~ "xterm-256color" || "screen-256color"
+   set t_Co=256
+   set t_Sf=[3%dm
+   set t_Sb=[4%dm
+elseif &term =~ "xterm-color"
+   set t_Co=8
+   set t_Sf=[3%dm
+   set t_Sb=[4%dm
+endif
+syntax enable
+hi PmenuSel cterm=reverse ctermfg=33 ctermbg=222 gui=reverse guifg=#3399ff guibg=#f0e68c
