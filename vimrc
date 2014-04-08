@@ -36,11 +36,11 @@ NeoBundle 'ujihisa/unite-colorscheme'
 "NeoBundle 'davidoc/taskpaper.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'croaker/mustang-vim'
+NeoBundle 'scrooloose/nerdtree'
 filetype plugin indent on     " Required!
 "
 " Brief help
@@ -56,7 +56,7 @@ let g:syntastic_mode_map = { 'mode': 'active',
   \ 'active_filetypes': [],
   \ 'passive_filetypes': ['html'] }
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_javascript_checker = 'gjslint'
+let g:syntastic_javascript_checkers = 'gjslint' 
 
 
 " An example for a gvimrc file.
@@ -139,7 +139,7 @@ let g:NERDTreeWinPos="left"
 let g:NERDTreeDirArrows=1
 let g:NERDTreeMouseMode=3
 
-colorscheme darkblue 
+colorscheme desert 
 if &term =~ "xterm-256color" || "screen-256color"
    set t_Co=256
    set t_Sf=[3%dm
