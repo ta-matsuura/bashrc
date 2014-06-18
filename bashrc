@@ -14,3 +14,4 @@ export KEON=/Users/txm/B2G_keon/B2G
 export INARI=/Users/txm/B2G_inari/B2G
 export B2G=/Users/txm/B2G
 export HOMEAPP=/Users/txm/gaia/apps/homescreen
+export FIREFOX=/Applications/FirefoxNightly.app/Contents/MacOS/firefox
