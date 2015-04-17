@@ -30,10 +30,11 @@ NeoBundle 'Shougo/vimproc', {
 " ...
 "NeoBundle 'Shougo/neocomplcache'
 "NeoBundle 'Shougo/neosnippet'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'ujihisa/unite-colorscheme'
 "NeoBundle 'thinca/vim-quickrun'
 "NeoBundle 'davidoc/taskpaper.vim'
+
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'scrooloose/nerdtree'
