@@ -36,11 +36,13 @@ NeoBundle 'ujihisa/unite-colorscheme'
 "NeoBundle 'davidoc/taskpaper.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'scrooloose/syntastic'
+NeoBundle 'scrooloose/nerdtree'
+"NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'croaker/mustang-vim'
-NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'rking/ag.vim'
 filetype plugin indent on     " Required!
 "
 " Brief help
@@ -52,11 +54,11 @@ filetype plugin indent on     " Required!
 NeoBundleCheck
 
 " syntastic
-let g:syntastic_mode_map = { 'mode': 'active',
-  \ 'active_filetypes': [],
-  \ 'passive_filetypes': ['html'] }
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_javascript_checkers = 'gjslint' 
+"let g:syntastic_mode_map = { 'mode': 'active',
+"  \ 'active_filetypes': [],
+"  \ 'passive_filetypes': ['html'] }
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_javascript_checker = 'gjslint'
 
 
 " An example for a gvimrc file.
@@ -85,7 +87,7 @@ set expandtab "タブ入力を複数の空白入力に置き換える
 set tabstop=2 "画面上でタブ文字が占める幅
 set shiftwidth=2 "自動インデントでずれる幅
 set softtabstop=2 "連続した空白に対してタブキーやバックスペースキーでカーソルが動く幅
-set autoindent "改行時に前の行のインデントを継続する
+"set autoindent "改行時に前の行のインデントを継続する
 set smartindent "改行時に入力された行の末尾に合わせて次の行のインデントを増減する
 
 " Make shift-insert work like in Xterm
@@ -139,7 +141,7 @@ let g:NERDTreeWinPos="left"
 let g:NERDTreeDirArrows=1
 let g:NERDTreeMouseMode=3
 
-colorscheme desert 
+colorscheme darkblue 
 if &term =~ "xterm-256color" || "screen-256color"
    set t_Co=256
    set t_Sf=[3%dm
